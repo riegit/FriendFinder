@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <!-- materialize -->  
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+</head>
+<body>
+    <div class="container" style="background: rgb(241, 237, 237); padding: 15px;margin-top: 10px;">
+        <div> 
+            <h4 style="text-align: center"><strong>Survey Questionnaire</strong></h4>
+            <h5><strong>About You</strong></h5>
+        </div>
+            <div class="input-field ">
+            <input id="name" type="text" class="validate" required>
+            <label for="name"> Name (Required)</label>
+            </div>
+            <div class="input-field">
+            <input id="Photo" type="text" class="validate" required>
+            <label for="Photo">Link to Photo Image (Required)</label>
+            </div><br>
+        <div class="main-container">
+        <h5><strong>Question 1</strong></h5>
+        <p><strong>You are usually highly motivated and energetic.</strong></p>
+            <select class="browser-default" id="q1">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 2</strong></h5>
+        <p><strong>You do not usually initiate conversations.</strong></p>
+            <select class="browser-default" id="q2">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 3</strong></h5>
+        <p><strong>You consider yourself more practical than creative.</strong></p>
+            <select class="browser-default" id="q3">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 4</strong></h5>
+        <p><strong>You often spend time exploring unrealistic and impractical yet intriguing ideas.</strong></p>
+            <select class="browser-default" id="q4">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 5</strong></h5>
+        <p><strong>You are often envious of others.</strong></p>
+            <select class="browser-default" id="q5">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 6</strong></h5>
+        <p><strong>You believe that it is more rewarding to be liked by others than to be powerful.</strong></p>
+            <select class="browser-default" id="q6">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 7</strong></h5>
+        <p><strong>Your travel plans are usually well thought out.</strong></p>
+            <select class="browser-default" id="q7">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 8</strong></h5>
+        <p><strong>You find it easy to stay relaxed even when there is some pressure.</strong></p>
+            <select class="browser-default" id="q8">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 9</strong></h5>
+        <p><strong>You feel superior to other people.</strong></p>
+            <select class="browser-default" id="q9">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+        <h5><strong>Question 10</strong></h5>
+        <p><strong>Your mood can change very quickly.</strong></p>
+            <select class="browser-default" id="q10">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1"> 1 (Strongly Disagree)</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5 (Strongly Agree)</option>
+            </select>
+       
+        </div><br>
+         <!-- Modal Trigger data-target="modal1" -->
+        <button class="btn waves-effect waves-light orange darken-4" type="submit" data-target="modal1" name="action" id="submitBtn">Submit
+                <i class="material-icons right">send</i>
+        </button>
+    </div><br>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/riegit/FriendFinder" target="_blank">GitHub Repo</a></p>
+        </div>
+    </footer>
+     <!-- Materialize Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Your Best Friend</h4>
+            <h5 id="matchName"></h5>
+            <img id="matchImage" src="" alt="No Image" width = 250px>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+<script type="text/JavaScript">
+//Grabs the data from user input and sends it to our express server
+$(document).ready(function() {
+    $('#submitBtn').on('click', function(){
+        event.preventDefault();
+        //validate the form
+        function validateForm() {
+                var isValid = true;
+                $('.validate').each(function() {
+                    if ($(this).val() === ''){
+                        isValid = false;
+                       return false;
+                    }
+                });
+
+                $('.browser-default').each(function() {
+                    if ($(this).val() === ""){
+                        isValid = false;
+                        return false;
+                    }
+                });
+
+                return isValid
+            }
+        
+        //If all required fields are filled
+        if(validateForm() == true){
+            //create an object for a new friend submitted by user
+            var newFriend = {
+                name: $('#name').val().trim(),
+                profilePic:$('#Photo').val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+            // AJAX post the data to the friends api
+            // Here we get the location of the root page.
+            // We use below instead of explicitly saying the URL is e.g localhost:3001 because the url will change when we deploy.
+            var currentURL = window.location.origin;
+
+            $.post(currentURL + "/api/friends", newFriend, function(data){
+                //Grab the result from the AJAX post to display best match's name and photo.
+                $('#matchName').text(data.name);
+                $('#matchImage').attr("src", data.profilePic);
+            });
+                // Show the modal with the best match
+                $('.modal').modal();
+
+                //clear form after submission
+                $('#name').val("");
+                $('#Photo').val("");
+                $('#q1').val("");
+                $('#q2').val("");
+                $('#q3').val("");
+                $('#q4').val("");
+                $('#q5').val("");
+                $('#q6').val("");
+                $('#q7').val("");
+                $('#q8').val("");
+                $('#q9').val("");
+                $('#q10').val("");
+        }else{
+            alert('Please fill out all fields before submitting!');
+        }
+
+    });
+});
+</script>
+</body>
+</html>
